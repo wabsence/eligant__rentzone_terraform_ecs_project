@@ -17,46 +17,46 @@ variable "environment" {
 }
 
 variable "vpc_cidr" {
-    description = "environment"
+    description = "vpc cidr block"
     type = string
 }
 
 
 #Public Subnets
 variable "pub_eligant_subnet_az1_cidr" {
-    description = "environment"
+    description = "public eligant subnet az1 cidr"
     type = string
 }
 variable "pub_eligant_subnet_az2_cidr" {
-    description = "environment"
+    description = "public eligant subnet az2 cidr"
     type = string
 }
 
 #Private Subnet for the App
 variable "private_eligantapp_subnet_az1_cidr" {
-    description = "environment"
+    description = "private eligant App subnet az1 cidr"
     type = string
 }
 
 variable "private_eligantapp_subnet_az2_cidr" {
-    description = "environment"
+    description = "private eligant App subnet az2 cidr"
     type = string
 }
 
 #Private Subnet for the Database
 variable "private_eligantdata_subnet_az1_cidr" {
-    description = "environment"
+    description = "private eligant Database subnet az1 cidr"
     type = string
 }
 
 variable "private_eligantdata_subnet_az2_cidr" {
-    description = "environment"
+    description = "private eligant Database subnet az2 cidr"
     type = string
 }
 
 
 variable "ssh_location" {
-    description = "environment"
+    description = "ip to grant ssh into the server"
     type = string
 }
 
@@ -66,16 +66,16 @@ variable "database_snapshot_identifier" {
 }
 
 variable "database_instance_class" {
-    description = "environment"
+    description = "database instance type"
     type = string
 }
 
 variable "database_instance_identifier" {
-    description = "environment"
+    description = "database instance identifier"
     type = string
 }
 
 variable "multi_az_deployment" {
-    description = "environment"
-    type = string
+    description = "create a standy db instance by allowing multiple az"
+    type = bool
 }
