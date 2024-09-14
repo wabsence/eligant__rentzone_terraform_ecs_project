@@ -79,3 +79,13 @@ variable "multi_az_deployment" {
     description = "create a standy db instance by allowing multiple az"
     type = bool
 }
+
+variable "domain_name" {
+  description = "domain name"
+  type = string
+}
+
+variable "subject_alternative_names" {
+  description = "subdomain names"
+  type = list()
+}
