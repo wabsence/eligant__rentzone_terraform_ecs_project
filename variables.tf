@@ -53,3 +53,9 @@ variable "private_eligantdata_subnet_az2_cidr" {
     description = "environment"
     type = string
 }
+
+
+variable "ssh_location" {
+    description = "environment"
+    type = string
+}
