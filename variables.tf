@@ -59,3 +59,23 @@ variable "ssh_location" {
     description = "environment"
     type = string
 }
+
+variable "database_snapshot_identifier" {
+    description = "environment"
+    type = string
+}
+
+variable "database_instance_class" {
+    description = "environment"
+    type = string
+}
+
+variable "database_instance_identifier" {
+    description = "environment"
+    type = string
+}
+
+variable "multi_az_deployment" {
+    description = "environment"
+    type = string
+}
