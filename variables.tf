@@ -87,5 +87,15 @@ variable "domain_name" {
 
 variable "subject_alternative_names" {
   description = "subdomain names"
-  type = list()
+  type = string
+}
+
+variable "env_file_bucket_name" {
+  description = "s3 bucket name"
+  type = string
+}
+
+variable "env_file_name" {
+    description = "env file name"
+    type = string
 }
