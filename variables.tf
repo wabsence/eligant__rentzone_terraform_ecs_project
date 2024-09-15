@@ -101,11 +101,16 @@ variable "env_file_name" {
 }
 
 variable "architecture" {
-    description = "value"
+    description = "the cpu architecture"
     type = string
 }
 
 variable "container_image" {
-    description = "value"
+    description = "the container image"
     type = string
+}
+
+variable "record_name" {
+    description = "the record name"
+    type = string 
 }
