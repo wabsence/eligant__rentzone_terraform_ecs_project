@@ -99,3 +99,13 @@ variable "env_file_name" {
     description = "env file name"
     type = string
 }
+
+variable "architecture" {
+    description = "value"
+    type = string
+}
+
+variable "container_image" {
+    description = "value"
+    type = string
+}
