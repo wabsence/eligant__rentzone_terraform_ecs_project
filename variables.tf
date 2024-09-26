@@ -81,13 +81,13 @@ variable "multi_az_deployment" {
 }
 
 variable "domain_name" {
-  description = "domain name"
-  type = string
+  type        = string
+  description = "Primary domain name for the ACM certificate"
 }
 
 variable "subject_alternative_names" {
-  description = "subdomain names"
-  type = string
+  type        = list(string)
+  description = "List of subdomains for ACM certificate"
 }
 
 variable "env_file_bucket_name" {
